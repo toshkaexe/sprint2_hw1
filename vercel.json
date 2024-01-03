@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "sprint2_hw1",
+  "name": "sprint1_hw4",
   "builds": [
     {
       "src": "src/index.ts",

@@ -61,6 +61,11 @@ yarn ts-jest config:init
 
 
 
+###  Для Валидации
+```
+yarn add express-validator
+```
+
 ### Для дебага в тестах
 
 ```
@@ -79,6 +84,8 @@ yarn add @types/body-parser
 ### Vercel
 
 vercel.json
+
+
 ```
 
 {
@@ -109,7 +116,7 @@ yarn install
 1) yarn install
 2) jest --version
 
-если установлен jesеt идем дальше, если нет то ставишь его
+если установлен jest идем дальше, если нет то ставишь его
 3)yarn list supertest
 
 если супертест установлен идем дальше
