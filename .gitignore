@@ -131,3 +131,13 @@ dist
 
 
 .idea/
+/src/routes/blog-route.js
+
+/src/domain/*.js
+/src/*/*.js
+/src/middlewares_validation/auth-middlewares.js
+/src/*.js
+/src/models/posts/posts-models.js
+/src/settings.js
+/src/models/db/db.js
+/src/models/blogs/blog-models.js
