@@ -62,3 +62,16 @@ yarn add @types/body-parser
 ```
 yarn install
 ```
+# Баги
+после обновления ноды заново сделай
+1) yarn install
+2) jest --version
+
+если установлен jesеt идем дальше, если нет то ставишь его
+3)yarn list supertest
+
+если супертест установлен идем дальше
+4)yarn add @types/supertest -dev
+5)yarn add @types/jest -dev
+
+это мы установили типы ts для этих библиотек
