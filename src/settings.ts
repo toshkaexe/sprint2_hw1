@@ -4,6 +4,8 @@ import {postRoute} from "./routes/post-route"
 import {testingRoute} from "./routes/testing-route";
 import morganBody from "morgan-body";
 import bodyParser from "body-parser";
+import {authRoute} from "./routes/auth-route";
+import {usersRouter} from "./routes/users-route";
 
 export const app: Express = express();
 morganBody(app);
@@ -11,7 +13,7 @@ app.use(express.json())
 
 app.use(bodyParser.json())
 app.get('/', (req, res) => {
-    res.send("HEllO HW4")
+    res.send("HEllO Sprint 2 HW 1")
 })
 app.get('/env', (req, res) => {
     res.send({
@@ -22,3 +24,6 @@ app.get('/env', (req, res) => {
 app.use('/blogs', blogRoute)
 app.use('/posts', postRoute)
 app.use('/testing', testingRoute)
+
+app.use('/auth', authRoute)
+app.use('/users', usersRouter)

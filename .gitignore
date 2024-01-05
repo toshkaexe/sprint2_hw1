@@ -135,7 +135,7 @@ dist
 
 /src/domain/*.js
 /src/*/*.js
-/src/middlewares_validation/auth-middlewares.js
+/src/middleware/auth-middlewares.js
 /src/*.js
 /src/models/posts/posts-models.js
 /src/settings.js
