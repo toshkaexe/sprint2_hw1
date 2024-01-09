@@ -12,7 +12,7 @@ export const usersRouter = Router({})
 usersRouter.get('/',
     authMiddleware,
     async (req: Request, res: Response) => {
-        const { pageNumber, pageSize, sortBy, sortDirection } = getPageOptions(req.query);
+        const {pageNumber, pageSize, sortBy, sortDirection} = getPageOptions(req.query);
         const searchLoginTerm = req.query.searchLoginTerm ? req.query.searchLoginTerm.toString() : null
         const searchEmailTerm = req.query.searchEmailTerm ? req.query.searchEmailTerm.toString() : null
 
