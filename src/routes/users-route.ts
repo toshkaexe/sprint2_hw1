@@ -5,6 +5,7 @@ import {authMiddleware} from "../middleware/auth-middlewares";
 import {UsersQueryRepository} from "../repositories/user-query-repository";
 import {usersService} from "../domain/users-service";
 import {validateUsers} from "../validators/auth-validation";
+import {inputValidation} from "../validators/input-validation";
 
 export const usersRouter = Router({})
 
@@ -23,9 +24,9 @@ usersRouter.get('/',
 
 usersRouter.post('/',
     authMiddleware,
-
     validateUsers(),
- //inputValidationMiddleware,
+    inputValidation,
+
     async (req: Request, res: Response): Promise<void> => {
         const newUser = await usersService.createUser(req.body)
         res.status(StatusCode.CREATED_201).send(newUser)

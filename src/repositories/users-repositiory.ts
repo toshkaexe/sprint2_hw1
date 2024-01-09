@@ -4,12 +4,7 @@ import {InsertOneResult, ObjectId, WithId} from "mongodb";
 
 export class UsersRepository {
 
-    static async getAllUsers() {
-        return usersCollection
-            .find()
-            .sort('createdAt', -1)
-            .toArray()
-    }
+
 
     static async createUser(user: UserDbModel): Promise<UserOutputModel> {
         const result: InsertOneResult<UserDbModel> = await usersCollection.insertOne({...user})

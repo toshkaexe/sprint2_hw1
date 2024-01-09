@@ -18,6 +18,7 @@ authRoute.post('/login',
         if (!user) {
 
             res.sendStatus(StatusCode.Unauthorized_401)
+            return
         }
         res.sendStatus(StatusCode.NoContent_204)
     }

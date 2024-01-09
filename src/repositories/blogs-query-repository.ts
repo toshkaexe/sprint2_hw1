@@ -14,7 +14,9 @@ export class BlogsQueryRepository {
 
         let searchNameFilter = {}
         if (searchNameTerm) {
-            searchNameFilter = {name: {$regex: searchNameTerm, $options: 'i'}}
+            searchNameFilter = {name:
+                    {$regex: searchNameTerm,
+                        $options: 'i'}}
         }
         let sortOptions: { [key: string]: 1 | -1 } = {
             [sortBy]: -1

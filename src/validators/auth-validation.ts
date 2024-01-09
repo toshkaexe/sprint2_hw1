@@ -3,7 +3,7 @@ import {body} from "express-validator";
 // const loginPattern = '^[a-zA-Z0-9_-]*$'
 const loginPattern = /^[a-zA-Z0-9_-]*$/
 
-// const emailPattern = '^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
+//const emailPattern = '^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
 const emailPattern = /^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/
 
 
