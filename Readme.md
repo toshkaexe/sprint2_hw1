@@ -1,3 +1,5 @@
+To install:  
+(in Russian)
 ## Для всех проектов спринт 1-2
 ### инициализируем node приложение:
 yarn init --yes
