@@ -76,7 +76,7 @@ yarn add express-validator
 
 ###  Для dotenv
 ```
- yarn add @types/mongodb 
+yarn add @types/dotenv
 ```
 
 ###  Для body-parser
@@ -91,14 +91,11 @@ yarn add @types/body-parser
 
 ```
 yarn add morgan-body
-```
-
-```
-yarn add body-parser
-```
-
-```
 yarn add @types/body-parser
+yarn add @types/bcript
+yarn add @types/body-parser
+npm i --save-dev @types/bcrypt
+
 ```
 
 
