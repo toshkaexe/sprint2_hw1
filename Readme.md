@@ -57,6 +57,8 @@ yarn ts-jest config:init
 },
 ```
 
+
+
 2. В корне проекта создаем папку  __tests__
 
 3. В папке  __tests__  создаем файл  name.e2e.tests.ts  (в качестве примера создан файл blogs.e2e.tests.ts)
@@ -66,6 +68,23 @@ yarn ts-jest config:init
 ###  Для Валидации
 ```
 yarn add express-validator
+```
+###  Для монгодб
+```
+ yarn add @types/mongodb 
+```
+
+###  Для dotenv
+```
+ yarn add @types/mongodb 
+```
+
+###  Для body-parser
+```
+yarn add morgan-body
+yarn add body-parser
+yarn add @types/body-parser
+
 ```
 
 ### Для дебага в тестах
